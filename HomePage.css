@@ -609,9 +609,10 @@ overflow-x:hidden;
 	#slideshow { 
     margin: auto auto; 
 	margin-left:3vw;
+	margin-right:9vw;
     position: relative;
 	display:inline-block;
-    width: 65%; 
+    width: 50%; 
     height: 80vh; 
     padding: 0px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 

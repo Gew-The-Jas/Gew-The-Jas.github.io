@@ -2,3 +2,4 @@ tăng cỡ font chữ một chút (5vw? 6vw?) (DONE)
 spacing của "sản phẩm" (second part) (DONE)
 Tăng left spacing của "các bước mua hàng" (DONE)
 Tạo border cho những flexbox dưới cùng (dưới của "các bước mua hàng)
+liên hệ chúng tôi tại [nút bấm facebook, zalo]
