@@ -181,13 +181,29 @@ overflow-x:hidden;
 }
 
 .third_part{
+	/*
     display:flex;
 	flex-flow: column;
 	position:relative;
 	width:100%;
 	max-height: 80vh;
 	background: #151515;
+	text-align:center;
+*/
+	
+	text-align: center;
+	border-width:5px;
+	border-style: none;/*solid;*/
+	padding-top: 13px;
+	padding-bottom: 6px;
+    display:flex;
+	flex-flow: column;
+	margin: 0 0;
+	margin-top:0px;
+	width:100%;
+	background-color: #151515;
 }
+.third_part > div{text-align:initial;};
 #slideshow{order:2;}
 #b{order:1;}
 .third_part .SlideImg {
@@ -527,6 +543,10 @@ overflow-x:hidden;
 
 /*Pc version:*/
 @media screen and (min-width: 600px) {
+	.top_header {
+		width: 90%;
+		
+	}
 	.top_welcome{
 		position:absolute;
 		top:15vh;
@@ -573,8 +593,9 @@ overflow-x:hidden;
 		width:100%;
 	}
 	.smoll_text_wrapper{
-		display:inline-block;width:49%;margin-left:3vw;
-		margin-right:9vw;
+		display:inline-block;width:39%;
+		margin-left:10vw;
+		margin-right:7vw;
 		margin-top:12vh;
 		vertical-align:top;	
 		text-align:right;
@@ -585,22 +606,20 @@ overflow-x:hidden;
 		right:0;
 		margin: auto auto;
 		margin-left: 1vw;
-		width:35%;
-		min-width:30%;
+		width:30vw;
+		min-width:25vw;
 	}
 	
 	.second_part {
 		width:100%;
 		flex-flow: row;
 	}
-	#slideshow{order:1;}
-	#b{order:2;}
 	
 	.third_part{
 		position:relative;
 		width:100%;
-		height:80vh;
-		padding-top: 3vh;
+		height:auto;
+		padding-top: 8vh;
 		padding-bottom: 3vh;
 		flex-flow:row-reverse;
 	}
@@ -610,13 +629,16 @@ overflow-x:hidden;
 		position:absolute;
 	}
 	#slideshow { 
-    margin: auto auto; 
-	margin-left:3vw;
-	margin-right:8vw;
+	order: 2;
+	margin-left:10vw;
+	margin-right:7vw;
+	margin-bottom: 0;
+	margin-top: 0;
     position: relative;
 	display:inline-block;
-    width: 50%; 
-    height: 80vh; 
+    width: 39%; 
+	height: 70vh;
+    /*height: 80vh; */
     padding: 0px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 	}
@@ -632,24 +654,28 @@ overflow-x:hidden;
 		bottom: 10px; */
 	}
 	.smoll_text_wrapper_2_wrapper{
+		padding-top: 2vh;
+		margin-top:11vh;
+		order: 1;
 		display:flex;
-		width:37%;
+		width:30vw;
 		margin-left:1vw;
-		margin-right:2vw;
+		margin-right:auto;
 		max-height: 100%;
-		margin-top:4vh;
 		vertical-align:top;	
 		float:right;
 		flex-flow: column;
 	}
 	.smoll_text_wrapper_2{
 		order:1;
-		display:inline-block;width:100%;margin-left:1vw;
+		display:inline-block;width:100%;
+		margin-left:0vw;
 		margin-right:0vw;
-		margin-top:5vh;
+		margin-top:0vh;
 		vertical-align:top;	
 		text-align:left;
-		margin-bottom: 6vh;
+		margin-bottom: 3vh;
+		flex-grow: 1;
 	}
 	.head_line_2{
 		margin-top:0vh;
