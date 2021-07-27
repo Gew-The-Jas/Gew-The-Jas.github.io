@@ -195,6 +195,7 @@ header {
   }
 }
 
+.nav-collapse .right-side {border-right: 1px solid transparent;}
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
@@ -236,8 +237,12 @@ transition: all 0.2s ease-in-out;
   .downed ul li a{
 	  border-left-color: #dedede;
   }
+  
+  .downed ul li .right-side{
+    border-right-color: #dedede;
+	}
 }
-}
+
 
 
 /* ------------------------------------------

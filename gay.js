@@ -14,7 +14,7 @@ window.addEventListener('scroll', function(e){
 	var scrolled = window.pageYOffset;
 	//rip IE<8
 	const background = document.getElementById('top_video_id');
-	background.style.top =  -(scrolled * 0.4) +'px';
+	background.style.top =  -(scrolled * 0.2) +'px';
 	if (scrolled > (window.innerHeight * 0.3)){
 		//$('.not-in-view').addClass('in-view');
 		document.getElementById('header_1').style.backgroundColor="#fff";
@@ -46,16 +46,6 @@ window.addEventListener('scroll', function(e){
 	});
 });
 
-$(window).on("load",function(){
-	//window.og_position = document.getElementById("top_video_id").offsetTop;
-	function resize_fb_quarter() {
-		var box_1 = document.getElementById('box_1');
-		var boox_3 = document.getElementById('box_3');
-		//boox_3.style.height = box_1.offsetHeight/2 + 'px';
-	}
-	resize_fb_quarter();
-	window.addEventListener('resize', resize_fb_quarter);
-});
 $(document).ready(function() {
 	document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
@@ -71,3 +61,5 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  5000);
 });
+
+
