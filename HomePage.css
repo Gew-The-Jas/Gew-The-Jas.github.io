@@ -10,24 +10,38 @@ html { visibility:hidden; }
     outline: 0px;
 }
 html {
-  scroll-behavior: smooth; overflow-x:hidden;
+  scroll-behavior: smooth; 
+  overflow-x:visible;
+  max-width:100vw;
+  /*overflow-x:hidden; will fuck up sticky video scroll*/
+}
+body {
+  overflow-x: hidden;
 }
 .pc_ver{
 	display:none;
 }
 .mobile_ver{
 	display:inline-block;
+	width:70vw !important;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 799px) {
+	/*
 	html {
-		scroll-behavior: smooth; overflow-x:visible; /*will fuck up sticky video scroll*/
+		overflow-x:visible; will FIX sticky video scroll
 	}
-	
+	*/
 	.pc_ver{
 		display:inline-block;
 	}
 	.mobile_ver{
 		display:none;
+	}
+	.delay_05 {
+		transition-delay: 0.5s !important;
+	}
+	.delay_10 {
+		transition-delay: 1s !important;
 	}
 }
 p{
@@ -35,12 +49,6 @@ p{
 	font-family: Verdana, Arial, Sans-serif;
 }
 a{text-decoration: none;
-}
-.delay_05 {
-	transition-delay: 0.5s !important;
-}
-.delay_10 {
-	transition-delay: 1s !important;
 }
 @keyframes fadein{
    from{opacity:0;}
@@ -79,6 +87,7 @@ a{text-decoration: none;
 	display: block;
 	margin: 0 0;
 	height:80vh;
+	position: -webkit-sticky;
 	position:sticky;
 	top:0;
 	z-index: -9999999;
@@ -86,6 +95,7 @@ a{text-decoration: none;
 }
 #first_video{
 display: block;
+position: -webkit-sticky;
 position:sticky;
 left:-75%;
 margin: auto auto;
@@ -181,6 +191,7 @@ overflow-x:hidden;
 }
 
 .third_part{	
+	overflow-x:hidden;
 	text-align: center;
 	border-width:5px;
 	border-style: none;/*solid;*/
@@ -255,6 +266,7 @@ overflow-x:hidden;
 	width:94%;
 }
 .third_second_part{
+	overflow-x:hidden;
 	padding-top:5vh;
 	padding-bottom:6vh;
 		width:100%;
