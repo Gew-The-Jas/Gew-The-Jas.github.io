@@ -262,8 +262,11 @@ transition: all 0.2s ease-in-out;
   text-indent: -300px;
   position: relative;
   overflow: hidden;
+  /*
   width: 60px;
-  height: 55px;
+  height: 55px;*/
+  width: 60px;
+  height: 45px;
   float: right;
 }
 
