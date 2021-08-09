@@ -15,7 +15,7 @@ window.addEventListener('scroll', function(e){
 	//rip IE<8
 	const background = document.getElementById('top_video_id');
 	background.style.top =  -(scrolled * 0.2) +'px';
-	if (scrolled > (window.innerHeight * 0.7)){
+	if (scrolled > (window.innerHeight * 0.6)){
 		//$('.not-in-view').addClass('in-view');
 		document.getElementById('header_1').style.backgroundColor="rgb(220, 220, 220)";
 		$('.nav-collapse a').css('color','#404040');
