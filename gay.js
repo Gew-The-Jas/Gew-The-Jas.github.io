@@ -15,14 +15,15 @@ window.addEventListener('scroll', function(e){
 	//rip IE<8
 	const background = document.getElementById('top_video_id');
 	background.style.top =  -(scrolled * 0.2) +'px';
-	if (scrolled > (window.innerHeight * 0.3)){
+	if (scrolled > (window.innerHeight * 0.7)){
 		//$('.not-in-view').addClass('in-view');
-		document.getElementById('header_1').style.backgroundColor="#fff";
+		document.getElementById('header_1').style.backgroundColor="rgb(220, 220, 220)";
 		$('.nav-collapse a').css('color','#404040');
 		$('a').css('color','#404040');
 		$('nav-toggle').css('color','#404040');
 		document.getElementsByClassName('nav-toggle')[0].classList.add("blacked");
 		document.getElementsByClassName('nav-collapse')[0].classList.add("downed");
+		document.getElementById('first_video').pause();
 	} else {
 		document.getElementsByClassName('nav-toggle')[0].classList.remove("blacked");
 		document.getElementById('header_1').style.backgroundColor="inherit";
@@ -30,6 +31,7 @@ window.addEventListener('scroll', function(e){
 		$('.nav-collapse a').css('color','#fff');	
 		$('a').css('color','#fff');	
 		$('nav-toggle').css('color','#fff');
+		document.getElementById('first_video').play();
 	}
 	$('.not-in-view').each(function () {
 		if (window.innerHeight * 0.8 > $(this)[0].getBoundingClientRect().top) {

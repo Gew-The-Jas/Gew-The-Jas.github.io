@@ -221,7 +221,7 @@ transition: all 0.2s ease-in-out;
 }
 .nav-collapse a:active,
 .nav-collapse .active a {
-  color: #f16821 !important;
+  color: #888888 !important;
 }
 
 @media screen and (min-width: 40em) {
@@ -235,11 +235,11 @@ transition: all 0.2s ease-in-out;
     font-family: Verdana, Arial, Sans-serif;
   }
   .downed ul li a{
-	  border-left-color: #dedede;
+	  border-left-color: #bbbbbb;
   }
   
   .downed ul li .right-side{
-    border-right-color: #dedede;
+    border-right-color: #bbbbbb;
 	}
 }
 
