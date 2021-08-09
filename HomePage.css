@@ -89,7 +89,7 @@ a{text-decoration: none;
 	position: -webkit-sticky;
 	position:sticky;
 	top:0;
-	z-index: -9999999;
+	z-index: 1000;
 	overflow-x:hidden;
 }
 #first_video{
@@ -601,7 +601,7 @@ overflow-x:hidden;
 		height:auto;
 		position:sticky;
 		top:0;
-		z-index: -9999999;
+		z-index: 1000;
 	}
 	
 	#first_video{
